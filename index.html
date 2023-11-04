@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nazibul Haque - UX Portfolio</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul id='nav-list'>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Inside the nav element -->
+                    <div class="menu-icon" id="menuIcon">&#9776;</div>
+
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>Nazibul Haque</h1>
+        <p class="typing-animation">Hi, I'm a dedicated UX/UI designer committed to crafting seamless and impactful digital experiences. With a strong foundation in user-centered design principles, I blend aesthetics with functionality to create designs that not only look great but also enhance user satisfaction. My passion lies in solving complex problems through intuitive and elegant design solutions. Explore my portfolio to witness my commitment to delivering exceptional user experiences.</p>
+        
+        <img src="profile-pic.jpg" alt="Nazibul Haque - Profile Picture">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- List your skills here -->
+        <ul>
+            <li>UX/UI Design</li>
+            <li>Figma</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python</li>
+            
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <!-- Add your work experience details here -->
+        <div class="experience-item">
+            <h3>Job Title</h3>
+            <p>Company Name</p>
+            <p>Date Range</p>
+            <p>Description of your role and accomplishments.</p>
+        </div>
+        <!-- Add more experience items as needed -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Your project cards go here -->
+        <div class="project-card">
+            <h3>Wireframe</h3>
+            <p>A simple clickable wireframe with micro-interaction animation</p>
+            <img src="project-thumbnail.jpg" alt="Project Thumbnail">
+        </div>
+     
+        <!-- Your project cards go here -->
+        <div class="project-card">
+            <h3>Demo</h3>
+            <p>Lorem Ipsum Dolled Summit. This project is just a filler</p>
+            <img src="pic.jpg" alt="Project Thumbnail">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/maygkooe" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- JavaScript Validation Message -->
+    <!--<p id="validationMessage"></p>-->
+</section>
+
+
+
+
+
+    
+
+
+    
+
+
+   
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById("menuIcon");
+    const navList = document.getElementById("nav-list");
+    
+    menuIcon.addEventListener("click", function() {
+    // Toggle the 'active' class on the navigation list
+    navList.classList.toggle("active");
+    });
+    });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
